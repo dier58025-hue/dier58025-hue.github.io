@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Artwork placeholder 4">
+  <rect width="1200" height="900" fill="#ddd0c1"/>
+  <circle cx="460" cy="290" r="162" fill="#6c5750" opacity="0.18"/>
+  <rect x="432" y="242" width="480" height="374" rx="18" fill="none" stroke="#151310" stroke-width="3" opacity="0.35"/>
+  <path d="M160 622 C 350 590, 550 620, 760 632 S 980 542, 1080 550" fill="none" stroke="#6c5750" stroke-width="22" stroke-linecap="round" opacity="0.42"/>
+  <line x1="130" y1="760" x2="1070" y2="760" stroke="#151310" stroke-width="2" opacity="0.2"/>
+  <text x="80" y="105" fill="#151310" font-family="Arial, sans-serif" font-size="42" opacity="0.42">WORK 04</text>
+  <text x="80" y="155" fill="#151310" font-family="Arial, sans-serif" font-size="22" opacity="0.36">Replace this SVG with your artwork image</text>
+</svg>

@@ -1,0 +1,2 @@
+请把正式作品集 PDF 命名为 portfolio.pdf，并放在这个文件夹里。
+路径应为：assets/pdf/portfolio.pdf
