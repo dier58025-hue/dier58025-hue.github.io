@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>个人作品集 Portfolio</title>
+  <meta name="description" content="Artist portfolio, research statement, CV and contact." />
+  <meta property="og:title" content="个人作品集 Portfolio" />
+  <meta property="og:description" content="Works, research, CV and contact." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/images/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文 / Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" data-site="nameZh">姓名</a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#works">作品 Works</a>
+        <a href="#research">研究 Research</a>
+        <a href="#cv">履历 CV</a>
+        <a href="#contact">联系 Contact</a>
+        <button class="lang-toggle" type="button" data-lang-toggle>EN / 中文</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow" data-site="roleZh">艺术创作者 / 研究者</p>
+        <h1><span data-site="nameZh">姓名</span><br><span class="muted" data-site="nameEn">Name Surname</span></h1>
+        <p class="hero-text zh" data-site="bioZh">这里是一段简洁的个人介绍，说明创作方向、研究兴趣和申请用途。</p>
+        <p class="hero-text en" data-site="bioEn">A concise biography introducing the artist's practice, research interests and academic direction.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#works">查看作品</a>
+          <a class="button" data-site-link="portfolioPdf" href="assets/pdf/portfolio.pdf">下载作品集 PDF</a>
+          <a class="button ghost" href="#contact">联系</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Featured statement">
+        <p class="card-label">Statement</p>
+        <p class="zh" data-site="statementShortZh">我的创作关注图像、身体、空间与档案之间的关系。</p>
+        <p class="en" data-site="statementShortEn">My practice examines the relationship between image, body, space and archive.</p>
+      </div>
+    </section>
+
+    <section class="section intro-grid" aria-label="Highlights">
+      <article>
+        <h2>方向 Direction</h2>
+        <p class="zh" data-site="directionZh">视觉艺术、影像、装置、档案实践、策展研究。</p>
+        <p class="en" data-site="directionEn">Visual art, moving image, installation, archival practice and curatorial research.</p>
+      </article>
+      <article>
+        <h2>用途 Purpose</h2>
+        <p class="zh">适合申博、考博、联系导师、作品展示与学术履历整理。</p>
+        <p class="en">Designed for doctoral applications, advisor outreach, portfolio review and academic presentation.</p>
+      </article>
+      <article>
+        <h2>更新 Maintenance</h2>
+        <p class="zh">后续只需修改 <code>data/site.js</code>，上传图片和 PDF 即可。</p>
+        <p class="en">Future updates only require editing <code>data/site.js</code> and replacing image/PDF files.</p>
+      </article>
+    </section>
+
+    <section class="section" id="works">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Works</p>
+        <h2>代表作品</h2>
+        <p class="zh">建议只放 6–10 个能代表研究方向和创作质量的项目。</p>
+        <p class="en">Include 6–10 projects that best represent the artist's practice and research trajectory.</p>
+      </div>
+      <div class="works-grid" id="worksGrid"></div>
+    </section>
+
+    <section class="section split" id="research">
+      <div>
+        <p class="eyebrow">Research / Statement</p>
+        <h2>研究与创作陈述</h2>
+      </div>
+      <div class="rich-text">
+        <p class="zh" data-site="researchZh">这里放 300–600 字左右的创作/研究陈述。建议说明问题意识、方法、媒介、理论背景，以及博士阶段希望继续推进的方向。</p>
+        <p class="en" data-site="researchEn">Place a 300–600 word research and artist statement here. It should explain the central questions, methods, media, theoretical context and future doctoral research direction.</p>
+        <div class="tags" id="keywordTags"></div>
+      </div>
+    </section>
+
+    <section class="section" id="cv">
+      <div class="section-heading">
+        <p class="eyebrow">Curriculum Vitae</p>
+        <h2>学术与创作履历</h2>
+        <p class="zh">艺术类申博建议使用 academic CV 结构，而不是普通求职简历。</p>
+        <p class="en">For doctoral applications in art-related fields, use an academic CV structure rather than a job résumé format.</p>
+      </div>
+      <div class="cv-list" id="cvList"></div>
+    </section>
+
+    <section class="section split" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>联系</h2>
+      </div>
+      <div class="contact-card">
+        <p class="zh">欢迎通过邮件联系，获取完整作品集、研究计划或进一步材料。</p>
+        <p class="en">For portfolio, research proposal or further materials, please contact by email.</p>
+        <a class="contact-email" id="emailLink" href="mailto:hello@example.com">hello@example.com</a>
+        <div class="socials" id="socialLinks"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> <span data-site="nameEn">Name Surname</span>. Built for GitHub Pages.</p>
+    <a href="#top">回到顶部 ↑</a>
+  </footer>
+
+  <script src="data/site.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
